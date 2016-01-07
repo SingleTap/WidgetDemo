@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEAF7D0D1C3E74F30088D2BC /* Custom_StatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AEAF7D0C1C3E74F30088D2BC /* Custom_StatusBar.m */; };
 		AEF0F7F91C3CB9DC0081D450 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF0F7F81C3CB9DC0081D450 /* main.m */; };
 		AEF0F7FC1C3CB9DC0081D450 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF0F7FB1C3CB9DC0081D450 /* AppDelegate.m */; };
 		AEF0F7FF1C3CB9DC0081D450 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF0F7FE1C3CB9DC0081D450 /* ViewController.m */; };
@@ -70,6 +71,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AEAF7D0B1C3E74F30088D2BC /* Custom_StatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Custom_StatusBar.h; sourceTree = "<group>"; };
+		AEAF7D0C1C3E74F30088D2BC /* Custom_StatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Custom_StatusBar.m; sourceTree = "<group>"; };
 		AEF0F7F41C3CB9DC0081D450 /* WidgetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF0F7F81C3CB9DC0081D450 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AEF0F7FA1C3CB9DC0081D450 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				AEF0F8051C3CB9DC0081D450 /* LaunchScreen.storyboard */,
 				AEF0F8081C3CB9DC0081D450 /* Info.plist */,
 				AEF0F7F71C3CB9DC0081D450 /* Supporting Files */,
+				AEAF7D0B1C3E74F30088D2BC /* Custom_StatusBar.h */,
+				AEAF7D0C1C3E74F30088D2BC /* Custom_StatusBar.m */,
 			);
 			path = WidgetDemo;
 			sourceTree = "<group>";
@@ -411,6 +416,7 @@
 			files = (
 				AEF0F7FF1C3CB9DC0081D450 /* ViewController.m in Sources */,
 				AEF0F7FC1C3CB9DC0081D450 /* AppDelegate.m in Sources */,
+				AEAF7D0D1C3E74F30088D2BC /* Custom_StatusBar.m in Sources */,
 				AEF0F7F91C3CB9DC0081D450 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -697,6 +703,7 @@
 				AEF0F8231C3CB9DC0081D450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEF0F8241C3CB9DC0081D450 /* Build configuration list for PBXNativeTarget "WidgetDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -705,6 +712,7 @@
 				AEF0F8261C3CB9DC0081D450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEF0F8271C3CB9DC0081D450 /* Build configuration list for PBXNativeTarget "WidgetDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -713,6 +721,7 @@
 				AEF0F8291C3CB9DC0081D450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEF0F83D1C3CB9FA0081D450 /* Build configuration list for PBXNativeTarget "TodayTarget" */ = {
 			isa = XCConfigurationList;
@@ -721,6 +730,7 @@
 				AEF0F83F1C3CB9FA0081D450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

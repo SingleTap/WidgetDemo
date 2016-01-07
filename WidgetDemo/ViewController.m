@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "Custom_StatusBar.h"
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *showIMG;
 
@@ -19,29 +21,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(reloadIMG:) name:@"reloadIMG" object:nil];
 
+    
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(reloadIMG:) name:@"reloadIMG" object:nil];
+    
 
 
 }
+
 - (void)reloadIMG:(NSNotification*)message{
 
+    CGFloat time = 5.0f;
+    
+    UIViewController *fir = [UIViewController new];
+    
+    Custom_StatusBar *bar =  [[Custom_StatusBar  alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 20)];
+    bar.rootViewController = fir;
+    [bar showStatusMessage:@"载入中..." andShowTime:time];
+    
     NSString *imgName = message.object[@"message"];
-    
-//    NSString *path = [[NSBundle mainBundle]pathForResource:@"1.jpg" ofType:nil];
-    
+
     UIImage *img = [UIImage imageNamed:[NSString stringWithFormat:@"%@",imgName]];
     
     self.showIMG.image = img;
+    self.showIMG.alpha = 0;
     
-//    CGFloat imgWidth  = img.size.width;
-//    CGFloat imgHeight = img.size.height;
-//
-//    
-//    self.wid.constant    = img.size.width;
-//    self.height.constant = img.size.height;
+    [UIView animateWithDuration:time animations:^{
+        self.showIMG.alpha = 1;
 
-    
+    }];
     
     
 }
@@ -53,3 +62,4 @@
 }
 
 @end
+

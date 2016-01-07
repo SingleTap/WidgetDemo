@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -15,8 +16,9 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+    
+    
     NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.uqian.me.WidgetDemo"];
     [shared setObject:@[@"1.jpg",@"2.jpg",@"3.jpg",@"4.jpg",@"1.jpg",@"2.jpg",@"3.jpg",@"4.jpg",@"4.jpg",@"1.jpg",@"2.jpg",@"3.jpg",@"4.jpg"] forKey:@"send"];
     [shared synchronize];
